@@ -1,0 +1,248 @@
+name: ArcanumCore
+description: Core Plugin
+version: 1.0
+author: Arcanum Development
+main: gg.arcanum.core.Core
+commands:
+  punishfor:
+    usage: /<command>
+  punish:
+    usage: /<command>
+  invsee:
+    description: View another player's inventory
+    usage: /<command> target
+    permission: core.invsee
+  whois:
+    description: View information about a player
+    usage: /<command> target
+    permission: core.whois
+  workbench:
+    description: Open up a workbench
+    usage: /<command>
+    permission: core.workbench
+  clear:
+    description: Clear your inventory or another players
+    usage: /<command> target
+    permission: core.clear
+  ci:
+    description: Clear your inventory or another players
+    usage: /<command> target
+    permission: core.ci
+  gm:
+    description: Set your gamemode or another players
+    usage: /<command> target
+    permission: core.gamemode
+  gamemode:
+    description: Set your gamemode or another players
+    usage: /<command> target
+    permission: core.gamemode
+  afk:
+    description: Mark yourself as AFK or not AFK
+    usage: /<command>
+    permission: core.afk
+  list:
+    description: View all online players
+    usage: /<command>
+    permission: core.list
+  heal:
+    description: Heal yourself or other players
+    usage: /<command> target
+    permission: core.heal
+  feed:
+    description: Feed yourself or other players
+    usage: /<command> target
+    permission: core.feed
+  hat:
+    description: Change your hat
+    usage: /<command> target
+    permission: core.hat
+  fly:
+    description: Enable or disable flying
+    usage: /<command> target
+    permission: core.fly
+  rules:
+    description: View the rules of the server
+    usage: /<command>
+    permission: core.rules
+  broadcast:
+    description: Broadcast a message to the server
+    usage: /<command> message
+    permission: core.broadcast
+  repair:
+    description: Fix the items in your hand or inventory
+    usage: /<command> args
+    permission: core.repair
+  help:
+    description: View all the Server commands
+    usage: /<command>
+  back:
+    description: Teleport to your previous location
+    usage: /<command>
+    permission: core.back
+  tp:
+    description: Teleport to another player
+    usage: /<command> target
+    permission: core.tp
+  tphere:
+    description: Teleport another player to you
+    usage: /<command> target
+    permission: core.tphere
+  tptoggle:
+    description: Disable teleportation to or from yourself
+    usage: /<command>
+    permission: core.tptoggle
+  tpa:
+    description: Request teleportation to another player
+    usage: /<command> target
+    permission: core.tpa
+  tpahere:
+    description: Request teleportation from another player
+    usage: /<command> target
+    permission: core.tpahere
+  tpaccept:
+    description: Accept a teleportation request
+    usage: /<command>
+    permission: core.tpaccept
+  tpdeny:
+    description: Deny a teleportation request
+    usage: /<command>
+    permission: core.tpdeny
+  top:
+    description: Go to the highest location
+    usage: /<command>
+    permission: core.top
+  home:
+    description: Go to your home
+    usage: /<command> home
+    permission: core.home
+  sethome:
+    description: Set your home to your current location
+    usage: /<command> home
+    permission: core.sethome
+  warp:
+    description: Go to a warp
+    usage: /<command> warp
+    permission: core.warp
+  setwarp:
+    description: Set a warp to your current location
+    usage: /<command> warp
+    permission: core.setwarp
+  delwarp:
+    description: Delete an existing warp
+    usage: /<command> warp
+    permission: core.delwarp
+  spawn:
+    description: Teleport to spawn
+    usage: /<command>
+    permission: core.spawn
+  setspawn:
+    description: Set the spawn point
+    usage: /<command>
+    permission: core.setspawn
+  kick:
+    description: Kick a player
+    usage: /<command> player message
+    permission: core.kick
+  ban:
+    description: Ban a player
+    usage: /<command> player message
+    permission: core.ban
+  unban:
+    description: Unban a player
+    usage: /<command> player
+    permission: core.pardon
+  mute:
+    description: Mute a player
+    usage: /<command> player minutes
+    permission: core.mute
+  unmute:
+    description: Unmute a player
+    usage: /<command> player
+    permission: core.unmute
+permissions:
+  arcanum.chat.colour:
+    default: op
+  arcanum.cmd.punish:
+    default: op
+  core.invsee:
+    default: op
+  core.whois:
+    default: op
+  core.workbench:
+    default: op
+  core.clear:
+    default: op
+  core.clearothers:
+    default: op
+  core.gamemode:
+    default: op
+  core.afk:
+    default: op
+  core.list:
+    default: op
+  core.staff:
+    default: op
+  core.heal:
+    default: op
+  core.healothers:
+    default: op
+  core.feed:
+    default: op
+  core.feedothers:
+    default: op
+  core.hat:
+    default: op
+  core.fly:
+    default: op
+  core.flyothers:
+    default: op
+  core.rules:
+    default: op
+  core.broadcast:
+    default: op
+  core.repair:
+    default: op
+  core.back:
+    default: op
+  core.tp:
+    default: op
+  core.tpa:
+    default: op
+  core.tpahere:
+    default: op
+  core.tpaccept:
+    default: op
+  core.tpdeny:
+    default: op
+  core.tphere:
+    default: op
+  core.tptoggle:
+    default: op
+  core.top:
+    default: op
+  core.home:
+    default: op
+  core.sethome:
+    default: op
+  core.warp:
+    default: op
+  core.setwarp:
+    default: op
+  core.delwarp:
+    default: op
+  core.spawn:
+    default: op
+  core.setspawn:
+    default: op
+  core.chatformat:
+    default: op
+  core.kick:
+    default: op
+  core.ban:
+    default: op
+  core.pardon:
+    default: op
+  core.mute:
+    default: op
+  core.unmute:
+    default: op

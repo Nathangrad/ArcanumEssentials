@@ -1,0 +1,20 @@
+Ranks:
+- Default
+- Sponsor
+- VIP
+- VIPplus
+- PRO
+- Helper
+- Moderator
+- Administrator
+- SysAdmin
+- Developer
+Tab:
+  Header:
+  - '&5&lARCANUM.GG'
+  - ' '
+  - '&5Brining the unique experience to you'
+  Footer:
+  - '&5%online%&7/&5%max%'
+  - ' '
+  - '&5store.arcanum.gg | ts.arcanum.gg | discord.arcanum.gg'
