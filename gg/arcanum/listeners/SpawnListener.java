@@ -32,8 +32,7 @@ public class SpawnListener implements Listener {
 						perms.getPrimaryGroup(joinEvent.getPlayer()))).replace("[", "").replace("]", "")
 				+ "§7" + joinEvent.getPlayer().getName());
 		if (!joinEvent.getPlayer().hasPlayedBefore()) {
-			EconomyAPI econ = new EconomyAPI();
-			econ.setup(joinEvent.getPlayer(), (double) 0);
+			EconomyAPI.setup(joinEvent.getPlayer(), (double) 0);
 			SpawnCommand.sendToSpawn(joinEvent.getPlayer());
 		}
 	}

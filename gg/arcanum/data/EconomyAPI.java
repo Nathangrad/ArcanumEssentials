@@ -18,8 +18,8 @@ public class EconomyAPI {
 	 * @throws NumberFormatException
 	 * @throws InvalidDataColumnException
 	 */
-	public String getBalanceString(Player player) throws NumberFormatException {
-		return get(player) + " Crowns";
+	public static String getBalanceString(Player player) throws NumberFormatException {
+		return get(player) + " Coins";
 	}
 
 	/**
@@ -35,7 +35,7 @@ public class EconomyAPI {
 	 * @throws NumberFormatException
 	 * @throws InvalidDataColumnException
 	 */
-	public boolean payPlayer(Player playerFrom, Player playerTo, double amount) throws NumberFormatException {
+	public static boolean payPlayer(Player playerFrom, Player playerTo, double amount) throws NumberFormatException {
 		if (get(playerFrom) < amount) {
 			return false;
 		}
@@ -53,7 +53,13 @@ public class EconomyAPI {
 		return true;
 	}
 
-	public Double get(Player player) {
+	/**
+	 * Get the balance of a player
+	 * 
+	 * @param player
+	 * @return
+	 */
+	public static Double get(Player player) {
 		MySqlManager sql = new MySqlManager();
 		try {
 			sql.open();
@@ -66,7 +72,10 @@ public class EconomyAPI {
 		return 0.0;
 	}
 
-	public void set(Player player, Double amount) {
+	/**
+	 * Set the balance of a player
+	 */
+	public static void set(Player player, Double amount) {
 		MySqlManager sql = new MySqlManager();
 		try {
 			sql.open();
@@ -77,7 +86,13 @@ public class EconomyAPI {
 		}
 	}
 
-	public void update(Player player, Double amount) {
+	/**
+	 * Update the balance of a player
+	 * 
+	 * @param player
+	 * @param amount
+	 */
+	public static void update(Player player, Double amount) {
 		MySqlManager sql = new MySqlManager();
 		try {
 			sql.open();
@@ -89,7 +104,13 @@ public class EconomyAPI {
 		}
 	}
 
-	public void setup(Player player, Double amount) {
+	/**
+	 * Set the player
+	 * 
+	 * @param player
+	 * @param amount
+	 */
+	public static void setup(Player player, Double amount) {
 		MySqlManager sql = new MySqlManager();
 		try {
 			sql.open();

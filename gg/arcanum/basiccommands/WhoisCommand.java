@@ -38,7 +38,6 @@ public class WhoisCommand implements CommandExecutor {
 			return true;
 		}
 		Player target = Bukkit.getServer().getPlayer(args[0]);
-		EconomyAPI econ = new EconomyAPI();
 		MySqlManager.doRunnable(new Runnable() {
 			@Override
 			public void run() {
@@ -47,7 +46,7 @@ public class WhoisCommand implements CommandExecutor {
 						player.sendMessage(essentials.prefix + "§eDisplaying information about " + target.getName()
 								+ "\n" + "§a - UUID: §7" + target.getUniqueId().toString() + "\n" + "§a - Health: §7"
 								+ target.getHealth() + "/20" + "\n§a - Hunger: §7" + target.getFoodLevel() + "/20"
-								+ "\n§a - Balance: §7" + econ.getBalanceString(target) + "\n§a - Location: §7("
+								+ "\n§a - Balance: §7" + EconomyAPI.getBalanceString(target) + "\n§a - Location: §7("
 								+ target.getWorld().getName() + ", " + target.getLocation().getBlockX() + ", "
 								+ target.getLocation().getBlockY() + ", " + target.getLocation().getBlockZ() + ")"
 								+ "\n§a - IP Address: §7" + target.getAddress().getHostName() + "\n§a - Gamemode: §7"
