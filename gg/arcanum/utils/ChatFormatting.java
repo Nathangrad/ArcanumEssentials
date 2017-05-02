@@ -1,20 +1,20 @@
 package gg.arcanum.utils;
 
-public class ChatFormatting { public ChatFormatting() {}
-  
-  public static String amperSand(String replace) { return 
-    
+public class ChatFormatting {
+	public static String amperSand(String replace) {
+		return replace.replaceAll("&a", "งa").replaceAll("&b", "งb")
+				.replaceAll("&c", "งc").replaceAll("&d", "งd")
+				.replaceAll("&e", "งe").replaceAll("&f", "งf")
+				.replaceAll("&0", "ง0").replaceAll("&1", "ง1")
+				.replaceAll("&2", "ง2").replaceAll("&3", "ง3")
+				.replaceAll("&4", "ง4").replaceAll("&5", "ง5")
+				.replaceAll("&6", "ง6").replaceAll("&7", "ง7")
+				.replaceAll("&8", "ง8").replaceAll("&9", "ง9")
+				.replaceAll("&l", "งl").replaceAll("&m", "งm")
+				.replaceAll("&o", "งo").replaceAll("&k", "งk");
+	}
 
-
-
-
-
-
-
-      replace.replaceAll("&a", "ยงa").replaceAll("&b", "ยงb").replaceAll("&c", "ยงc").replaceAll("&d", "ยงd").replaceAll("&e", "ยงe").replaceAll("&f", "ยงf").replaceAll("&0", "ยง0").replaceAll("&1", "ยง1").replaceAll("&2", "ยง2").replaceAll("&3", "ยง3").replaceAll("&4", "ยง4").replaceAll("&5", "ยง5").replaceAll("&6", "ยง6").replaceAll("&7", "ยง7").replaceAll("&8", "ยง8").replaceAll("&9", "ยง9").replaceAll("&l", "ยงl").replaceAll("&m", "ยงm").replaceAll("&o", "ยงo").replaceAll("&k", "ยงk");
-  }
-  
-  public static String apos(String replace) {
-    return replace.replaceAll("'", "|");
-  }
+	public static String apos(String replace) {
+		return replace.replaceAll("'", "|");
+	}
 }
