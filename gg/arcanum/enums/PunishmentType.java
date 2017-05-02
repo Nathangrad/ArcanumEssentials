@@ -1,5 +1,6 @@
 package gg.arcanum.enums;
 
-public enum PunishmentType {
-	MUTE, BAN;
+public enum PunishmentType
+{
+  MUTE,  BAN;
 }

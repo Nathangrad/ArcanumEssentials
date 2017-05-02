@@ -1,5 +1,6 @@
 package gg.arcanum.utils;
 
-public enum RequestType {
-	TPA, TPAHERE
+public enum RequestType
+{
+  TPA,  TPAHERE;
 }
